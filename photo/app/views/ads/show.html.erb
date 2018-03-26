@@ -1,0 +1,28 @@
+
+<p id="notice"><%= notice %></p>
+
+<div style="
+   width:340px;
+   height:510px;
+   border: 1px solid black; 
+   background-image: url(<%=@ad.picture_url(:thumb)%>);
+   ">
+   <center style="
+   color:#fff;
+    border-top: 100px;
+    "> 
+      <strong><%= @ad.title %></strong>
+    </center>
+  
+  <p>
+  <center style="
+  color:#fff;
+  border-top:100px;">
+    <strong>Content:</strong>
+    <%= @ad.content %>
+  </center>
+</div>
+
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>
